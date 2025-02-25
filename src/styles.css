@@ -1,3 +1,52 @@
+
 body {
-    color: red;
+
+    /* background-color: #006BBD; */
+    background-color: #EDE8E4;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    /* background-color: #83CEEC; */
+    /* background-color: #284177; */
+    background-color: #006BBD;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+footer {
+    background-color: black;
+    height: 60px;
+}
+
+#landing-page {
+    background-image: url("./images/young-giorgios.jpg");
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    h1 {
+        color: white;
+        font-size: 80px;
+        margin: 0;
+        margin-left: 30%;
+    }
+}
+
+.info-panel {
+    width: 800px;
+    min-height: 90vh;
+    margin: auto;
+    h2 {
+        text-align: center;
+    }
 }
