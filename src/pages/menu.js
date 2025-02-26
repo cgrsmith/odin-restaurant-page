@@ -6,19 +6,36 @@ export const renderMenuPage = () => {
 
 const createMenuPanel = () => {
     const aboutTitle = "Menu";
-    const aboutText = "When Georgios Giovanni departed the motherland in 1947 he had \
-    nothing but a suitcase and a dream: To bring the best homestyle greek \
-    cooking to his new home in Australia. For three generations the Giovanni \
-    family has honoured Georgio's legacy by offering our patrons the \
-    best Greek drinking and dining experience possible.";
+
     const panel = document.createElement("div");
     panel.id="menu";
     panel.classList = "info-panel";
     const title = document.createElement("h2");
     title.innerText = aboutTitle;
-    const text = document.createElement("p");
-    text.innerText = aboutText;
+
     panel.appendChild(title);
-    panel.appendChild(text);
+    panel.appendChild(document.createElement("hr"));
+    const menuItems = document.createElement("ul");
+    menuItems.appendChild(createMenuItem("Tzatziki and Pita","9.00"));
+    menuItems.appendChild(createMenuItem("Spanikopita","12.00"));
+    menuItems.appendChild(createMenuItem("Greek Salad","9.00"));
+    menuItems.appendChild(createMenuItem("Moussaka","11.00"));
+    menuItems.appendChild(createMenuItem("Chicken Souvlaki","14.00"));
+
+
+    panel.appendChild(menuItems);
     return panel;
+}
+
+function createMenuItem(name, price) {
+    const item = document.createElement("li");
+    const itemName = document.createElement("span");
+    itemName.classList = "menu-item-name";
+    itemName.innerText = name;
+    const itemPrice = document.createElement("span");
+    itemPrice.classList = "menu-item-price";
+    itemPrice.innerText = "$" + price;
+    item.appendChild(itemName);
+    item.appendChild(itemPrice);
+    return item;
 }

@@ -15,6 +15,7 @@ renderLandingPage();
 document.getElementById("nav-about").addEventListener("click", () => {
     clearContent();
     renderLandingPage();
+    window.scrollTo(0, 600)
 });
 
 document.getElementById("nav-menu").addEventListener("click", () => {

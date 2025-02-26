@@ -1,28 +1,60 @@
+* {
 
+}
 body {
 
     /* background-color: #006BBD; */
     background-color: #EDE8E4;
     padding: 0;
     margin: 0;
+
+}
+
+#content {
+    min-height: 80vh;
+    padding: 0;
+    margin: 0;
 }
 
 nav{
-    /* background-color: #83CEEC; */
+    background-color: #c2AFA8;
     /* background-color: #284177; */
-    background-color: #006BBD;
-    color: white;
+    /* background-color: #006BBD; */
+    color: #284177;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content:  space-between;
     align-items: center;
     height: 10vh;
+    border-bottom: 2px solid #284177;
+    h1 {
+        font-size: 46px;
+        font-weight: 200;
+        letter-spacing: 0.2rem;
+        margin-left: 60px;
+    }
+    ul {
+        display: flex;
+        gap: 5%;
+        margin-right: 60px;
+    }
+    li {
+        list-style-type: none;
+    }
+    button {
+        border: none;
+        color: inherit;
+        background-color: inherit;
+        font-size: 26px;
+        letter-spacing: 0.15rem;
+        cursor: pointer;
+    }
 }
 
 footer {
     background-color: black;
-    height: 60px;
+    height: 5vh;
 }
 
 #landing-page {
@@ -33,20 +65,58 @@ footer {
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center;
+    align-items: top;
+    justify-content: center;
     h1 {
-        color: white;
+        color: #284177;
         font-size: 80px;
         margin: 0;
-        margin-left: 30%;
+        padding: 8px;
+        height: 100px;
+        margin-top: 60px;
+        /* margin-left: 30%; */
+        background-color: #EDE8E4;
+        border: 4px solid #284177;
+        font-weight: 200;
+        letter-spacing: 0.2rem;
     }
 }
 
 .info-panel {
-    width: 800px;
-    min-height: 90vh;
-    margin: auto;
+    width: 600px;
+    margin: 5vh auto;
+    outline: 2px solid #006BBD;
+    padding: 40px;
+    background-color: #EEEEEE;
     h2 {
         text-align: center;
+        letter-spacing: 0.1rem;
+        font-weight: 200;
     }
+    
+}
+
+#about {
+    min-height: 30vh;
+    font-size: 18px;
+    text-align: center;
+}
+
+#menu {
+    ul {
+        list-style-type: none;
+        width: 500px;
+        margin: none;
+        padding: none;
+        line-height: 30px;
+        font-size: 20px;
+        li {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+#contact {
+    /* min-height: 70vh; */
 }
